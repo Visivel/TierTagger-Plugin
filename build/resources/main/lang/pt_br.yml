@@ -1,0 +1,75 @@
+commands:
+  no_permission: "&cVoce nao tem permissao pra usar esse comando"
+  player_only: "&cEsse comando so pode ser usado por jogadores"
+  unknown_command: "&cComando desconhecido"
+  unknown: "&cComando desconhecido. Use /tiertagger help para comandos disponiveis"
+  invalid_usage: "&cUso {usage}"
+  help:
+    header: "&6=== Comandos do TierTagger ==="
+    reload: "&e/tiertagger reload &7- Recarregar configuracao do plugin"
+    tier: "&e/tier <jogador> &7- Verificar tier de um jogador"
+    display: "&e/display &7- Alternar exibicao de tier pra voce"
+    tieroff: "&e/tieroff &7- Alternar sistema de tier globalmente (Apenas Admin)"
+  tier:
+    usage: "&cUso: /tier <jogador>"
+    searching: "&eProcurando informacoes de tier para {player}..."
+    not_found: "&cNao foi possivel encontrar informacoes de tier para {player}."
+  reload:
+    success: "&aConfiguracao do TierTagger recarregada com sucesso!"
+    cache_cleared: "&eCache limpo - novas configuracoes de API entrarao em vigor imediatamente."
+    error: "&cErro ao recarregar configuracao: {error}"
+
+tier:
+  searching: "&eProcurando informacoes de tier: {player}"
+  not_found: "&cNao foi possivel encontrar informacoes de tier para o {player}"
+  header: "&6=== Informacoes de Tier pra {player}{cache} ==="
+  cached_indicator: " &7cache"
+  best_tier: "&eMelhor Tier &f{tier}"
+  gamemode_tiers: "&eTiers por Modo de Jogo"
+  gamemode_entry: "&7  {gamemode} &f{tier} &7#{position}"
+  region: "&eRegiao &f{region}"
+  points: "&ePontos &f{points}"
+  overall_rank: "&eRank Geral &f#{rank}"
+
+display:
+  enabled: "&aExibicao de tier foi aativadaa pra voce"
+  disabled: "&cExibicao de tier foi cdesativadac pra voce"
+
+hidetier:
+  hidden: "&cSeu tier agora esta oculto dos outros jogadores"
+  shown: "&aSeu tier agora esta visivel pra outros jogadores"
+
+tieroff:
+  enabled: "&aSistema de exibicao de tier foi aativadoa globalmente"
+  disabled: "&cSistema de exibicao de tier foi cdesativadoc globalmente"
+
+
+tiers:
+  ht1: "&c&lHigh Tier 1"
+  lt1: "&6&lLow Tier 1"
+  ht2: "&e&lHigh Tier 2"
+  lt2: "&a&lLow Tier 2"
+  ht3: "&b&lHigh Tier 3"
+  lt3: "&9&lLow Tier 3"
+  ht4: "&d&lHigh Tier 4"
+  lt4: "&5&lLow Tier 4"
+  ht5: "&7&lHigh Tier 5"
+  lt5: "&8&lLow Tier 5"
+  unranked: "&fSem Rank"
+
+gamemodes:
+  vanilla: "Vanilla"
+  sword: "Sword"
+  pot: "Pot"
+  uhc: "UHC"
+  axe: "Axe"
+  nethop: "Netherite OP"
+  mace: "Mace"
+  smp: "SMP"
+  crystal: "Cristal"
+
+debug:
+  loaded_cache: "Dados de tier em cache carregados pra {player}"
+  fetched_cache: "Dados de tier buscados e guardados em cache pra {player}"
+  no_data: "Nenhum dado de tier encontrado pra {player}"
+  cleaned_cache: "Limpado {count} entradas de cache expirados"

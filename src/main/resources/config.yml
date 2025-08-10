@@ -1,0 +1,70 @@
+# I did a very well detailed config, so no errors for you <3
+api:
+  # Available options: MCTIERS, SOUTH_TIERS
+  provider: MCTIERS
+  # Default gamemode to check (for MCTiers API only)
+  # Gamemodes: vanilla, sword, pot, uhc, axe, nethop, mace, smp
+  default_gamemode: vanilla
+  # Request timeout in seconds
+  timeout: 10
+  # Cache duration in minutes
+  cache_duration: 30
+
+display:
+  # Enable tier display globally
+  enabled: true
+  # Display format
+  format: "{tier} | {player}"
+  # Show tier in tab list
+  show_in_tablist: true
+  # Show tier in chat
+  show_in_chat: true
+  # Server-wide display settings (independent of individual /display command)
+  # Show tier in player nametags
+  display_show_nametag: true
+  # Show tier in tablist
+  display_show_tablist: false
+
+language: en_us # en_us or pt_br
+
+# Tier Colors (RGB format)
+tier_colors:
+  ht1:
+    start: "#FF0000" # Start = start color of the gradient
+    end: "#A60000" # End = end color of the gradient
+  lt1:
+    start: "#FF3200"
+    end: "#FF5E37"
+  ht2:
+    start: "#C4FF00"
+    end: "#8DB800"
+  lt2:
+    start: "#0DFF00"
+    end: "#08A800"
+  ht3:
+    start: "#FFE200"
+    end: "#CCB500"
+  lt3:
+    start: "#00FFAB"
+    end: "#00BAA9"
+  ht4:
+    start: "#00B2FF"
+    end: "#0074A6"
+  lt4:
+    start: "#5500FF"
+    end: "#3B00B0"
+  ht5:
+    start: "#D47410"
+    end: "#AD6214"
+  lt5:
+    start: "#916231"
+    end: "#704518"
+
+database:
+  # Database file location
+  file: "plugins/TierTagger/database.db"
+  pool_size: 10
+
+debug:
+  enabled: false
+  log_api_requests: false

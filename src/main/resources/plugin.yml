@@ -1,0 +1,50 @@
+name: TierTagger
+version: ${version}
+main: net.tiertagger.TierTaggerPlugin
+api-version: 1.21
+author: Visivel
+description: Display player tiers from MCTiers and South Tiers
+website: https://github.com/tiertagger/tiertagger
+
+depend: []
+softdepend: [PlaceholderAPI]
+
+permissions:
+  tiertagger.reload:
+    description: Allows reloading plugin configuration
+    default: op
+  tiertagger.tiersearch:
+    description: Allows searching for player tiers
+    default: true
+  tiertagger.display:
+    description: Allows toggling tier display for yourself
+    default: true
+  tiertagger.hidetier:
+    description: Allows hiding your tier from others
+    default: true
+  tiertagger.admin:
+    description: Admin permissions for TierTagger
+    default: op
+
+commands:
+  tier:
+    description: Search for a player tier information
+    usage: /tier <player>
+    permission: tiertagger.tiersearch
+  display:
+    description: Toggle tier display for yourself
+    usage: /display
+    permission: tiertagger.display
+  tieroff:
+    description: Toggle tier system globally
+    usage: /tieroff
+    permission: tiertagger.admin
+  hidetier:
+    description: Hide your tier from others
+    usage: /hidetier
+    permission: tiertagger.hidetier
+  tiertagger:
+    description: Main TierTagger command
+    usage: /tiertagger <reload>
+    permission: tiertagger.reload
+    aliases: [tt]

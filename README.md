@@ -2,6 +2,7 @@
 
 A Minecraft plugin for displaying player tiers from MCTiers (Non Brazilian Tierslist) and South Tiers API (Brazilian Tierlist) with advanced caching, multilanguage support, and PlaceholderAPI integration
 ![logo](/images/tiertaggerplugin.png)
+![display](/images/example.png)
 
 ## Features
 

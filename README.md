@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# TierTagger-plugin
-A server sided Tier Tagger
-=======
 # TierTagger Plugin
 
 A Minecraft plugin for displaying player tiers from MCTiers (Non Brazilian Tierslist) and South Tiers API (Brazilian Tierlist) with advanced caching, multilanguage support, and PlaceholderAPI integration
@@ -152,4 +148,3 @@ The compiled jar will be available in `build/libs/`
 - Minecraft Server 1.21.1+
 - Paper/Spigot server
 - PlaceholderAPI (optional)
->>>>>>> 67cfed8 (upload)
